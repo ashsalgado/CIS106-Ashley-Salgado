@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-08 11:31:23 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODsxMToyNjowMSBQTTszMzUy"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODsxMTozMToyMyBQTTsxOzM0NjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fixed" type="Real" array="False" size=""/>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="cost" type="Real" array="False" size=""/>
+            <declare name="breakeven" type="Real" array="False" size=""/>
+            <input variable="fixed"/>
+            <input variable="price"/>
+            <input variable="cost"/>
+            <assign variable="breakeven" expression="fixed / (price - cost)"/>
+            <output expression="&quot; Break even point &quot; &amp;breakeven" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

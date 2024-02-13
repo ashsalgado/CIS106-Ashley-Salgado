@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-08 10:43:49 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODsxMDoxOToyNCBQTTszMzU4"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODsxMDo0Mzo0OSBQTTsxOzM0NzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mealtotal" type="Real" array="False" size=""/>
+            <declare name="tip15" type="Real" array="False" size=""/>
+            <declare name="tip18" type="Real" array="False" size=""/>
+            <declare name="tip20" type="Real" array="False" size=""/>
+            <declare name="total15" type="Real" array="False" size=""/>
+            <declare name="total18" type="Real" array="False" size=""/>
+            <declare name="total20" type="Real" array="False" size=""/>
+            <input variable="mealtotal"/>
+            <assign variable="tip15" expression="mealtotal * 0.15"/>
+            <assign variable="tip18" expression="mealtotal * 0.18"/>
+            <assign variable="tip20" expression="mealtotal * 0.20"/>
+            <assign variable="total15" expression="mealtotal + tip15"/>
+            <assign variable="total18" expression="mealtotal + tip18"/>
+            <assign variable="total20" expression="mealtotal + tip20"/>
+            <output expression="&quot; The total of the meal &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot; The tip is &quot; &amp;tip15" newline="True"/>
+            <output expression="&quot; The total with tip is &quot; &amp;total15" newline="True"/>
+            <output expression="&quot; The total of the meal &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot; The tip is &quot; &amp;tip18" newline="True"/>
+            <output expression="&quot; The total with tip is &quot; &amp;total18" newline="True"/>
+            <output expression="&quot; The total of the meal &quot; &amp;mealtotal" newline="True"/>
+            <output expression="&quot; The tip is &quot; &amp;tip20" newline="True"/>
+            <output expression="&quot; The total with tip is &quot; &amp;total20" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

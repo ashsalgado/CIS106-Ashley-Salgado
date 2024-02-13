@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PhotonUser"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-08 10:03:24 PM"/>
+        <attribute name="created" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODswOTo1NDo0MyBQTTszMzY2"/>
+        <attribute name="edited" value="UGhvdG9uVXNlcjtFQzJBTUFaLThGTEZQRVM7MjAyNC0wMi0wODsxMDowMzoyNCBQTTsxOzM0NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="exam1" type="Real" array="False" size=""/>
+            <declare name="exam2" type="Real" array="False" size=""/>
+            <declare name="total1" type="Real" array="False" size=""/>
+            <declare name="total2" type="Real" array="False" size=""/>
+            <declare name="totalscore" type="Real" array="False" size=""/>
+            <input variable="exam1"/>
+            <input variable="exam2"/>
+            <assign variable="total1" expression="0.60 * exam1"/>
+            <assign variable="total2" expression="0.40 * exam2"/>
+            <assign variable="totalscore" expression="total1 + total2"/>
+            <output expression="&quot; Total score is &quot; &amp;totalscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
